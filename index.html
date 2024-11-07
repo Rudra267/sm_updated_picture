@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="inner-container">
+        <!-- menubar -->
+
+        <div id="menubar">
+          <menu class="menu">
+            <button class="menu__item active" style="--bgColorItem: #ff8c00">
+              <svg
+                class="w-6 about h-6 text-white-800 dark:text-white icon"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke="white"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m9 5 7 7-7 7"
+                />
+              </svg>
+            </button>
+
+            <button class="menu__item" style="--bgColorItem: #f54888">
+              <svg
+                class="w-6 vision h-6 text-gray-800 dark:text-white icon"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke="white"
+                  stroke-width="2"
+                  d="M21 12c0 1.2-4.03 6-9 6s-9-4.8-9-6c0-1.2 4.03-6 9-6s9 4.8 9 6Z"
+                />
+                <path
+                  stroke="white"
+                  stroke-width="2"
+                  d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                />
+              </svg>
+            </button>
+
+            <button class="menu__item" style="--bgColorItem: #4343f5">
+              <svg
+                class="w-6 terms h-6 text-white-800 dark:text-white icon "
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke="white"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M18 5V4a1 1 0 0 0-1-1H8.914a1 1 0 0 0-.707.293L4.293 7.207A1 1 0 0 0 4 7.914V20a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-5M9 3v4a1 1 0 0 1-1 1H4m11.383.772 2.745 2.746m1.215-3.906a2.089 2.089 0 0 1 0 2.953l-6.65 6.646L9 17.95l.739-3.692 6.646-6.646a2.087 2.087 0 0 1 2.958 0Z"
+                />
+              </svg>
+            </button>
+
+            <button class="menu__item" style="--bgColorItem: #e0b115">
+              <svg
+                class="w-6 products h-6 text-white-800 dark:text-white icon"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke="white"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 13h3.439a.991.991 0 0 1 .908.6 3.978 3.978 0 0 0 7.306 0 .99.99 0 0 1 .908-.6H20M4 13v6a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-6M4 13l2-9h12l2 9"
+                />
+              </svg>
+            </button>
+
+            <button class="menu__item" style="--bgColorItem: #65ddb7">
+              <svg
+                class="w-6 address h-6 text-gray-800 dark:text-white icon "
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke="white"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M7 6H5m2 3H5m2 3H5m2 3H5m2 3H5m11-1a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2M7 3h11a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Zm8 7a2 2 0 1 1-4 0 2 2 0 0 1 4 0Z"
+                />
+              </svg>
+            </button>
+
+            <div class="menu__border"></div>
+          </menu>
+
+          <div class="svg-container">
+            <svg viewBox="0 0 202.9 45.5">
+              <clipPath
+                id="menu"
+                clipPathUnits="objectBoundingBox"
+                transform="scale(0.0049285362247413 0.021978021978022)"
+              >
+                <path
+                  d="M6.7,45.5c5.7,0.1,14.1-0.4,23.3-4c5.7-2.3,9.9-5,18.1-10.5c10.7-7.1,11.8-9.2,20.6-14.3c5-2.9,9.2-5.2,15.2-7
+                      c7.1-2.1,13.3-2.3,17.6-2.1c4.2-0.2,10.5,0.1,17.6,2.1c6.1,1.8,10.2,4.1,15.2,7c8.8,5,9.9,7.1,20.6,14.3c8.3,5.5,12.4,8.2,18.1,10.5
+                      c9.2,3.6,17.6,4.2,23.3,4H6.7z"
+                />
+              </clipPath>
+            </svg>
+          </div>
+        </div>
+
+        <div class="containt">
+          <!-- popup -->
+          <div class="about popup">
+            <div class="conta">
+              <h3>About Company</h3>
+              <hr>
+      <p>        We Believe That Everyone Should Have Access to the
+        Tools and Resources Needed to Achieve Their Financial Goals.
+        Whether You're a Seasoned Trader or Just Starting Out, Our
+        Platform Is Designed to Provide You with the Support and Guidance
+        You Need to Thrive in Today ' s Dynamic Trading Environment. We
+        offer a range of innovative, high-quality products designed to
+        enhance health, wellness, and lifestyle. We provide a supportive
+        business model that enables anyone, regardless of background, to
+        unlock their potential and achieve financial freedom.</p>
+            </div>
+          </div>
+
+          <div class="vision popup">
+            <div class="conta">
+              <h3>Our Vision</h3>
+              <hr>
+      <p>       
+        Our vision is to create a community where individuals are empowered
+        to achieve their fullest potential through entrepreneurship, personal
+        growth, and shared success.Inspire Financial Freedom: Building
+        pathways to independence through innovative products and services.
+        Promote Personal Development: Fostering a culture of growth and
+        continuous learning.
+        </p>
+            </div>
+          </div>
+
+          <div class="terms popup">
+            <div class="conta">
+              <h3>TERMS AND CONDITIONS </h3>
+      <p>
+         Daily Withdrawal (IMPS/NEFT/RTGS/24 hours
+time). <br>
+Minimum Withdrawal Rs. 100. <br>
+On Every Withdrawal 10% Admin Charges
+and 5% TDS <Charges class="br"></Charges>
+Unlimited IDs with one mobile number and
+Pan Card. <br>
+Company reserved full rights on Plan and
+Decisions.
+
+       
+        </p>
+            </div>
+          </div>
+
+          <div class="products popup">
+
+            <h2>TYPES OF INCOME</h2>
+            <br>
+            <h3>1. DIRECT INCOME</h3>
+            <h3>2. LEVEL INCOME</h3>
+            <h3>3. REWARD INCOME</h3>
+            <br>
+            <h2>Level Income</h2>
+
+<table>
+  <tr>
+    <th>LEVEL</th>
+    <th>IDS</th>
+    <th>INCOME</th>
+    <th>TOTAL INCOME</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>10</td>
+    <td>25</td>
+    <td>250</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>100</td>
+    <td>25</td>
+    <td>2500</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>1000</td>
+    <td>25</td>
+    <td>25000</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>10000</td>
+    <td>25</td>
+    <td>2.5 Lakhs</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>100000</td>
+    <td>25</td>
+    <td>25 Lakhs</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>10000000</td>
+    <td>25</td>
+    <td>2.5 Cr</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>1cr</td>
+    <td>25</td>
+    <td>25 Cr</td>
+  </tr>
+</table>
+
+            
+            
+            <h2>Rewards Income</h2>
+
+            <table>
+              <tr>
+                <th>LEVEL</th>
+                <th>ID's</th>
+                <th>Reward</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>10 Direct</td>
+                <td>Smart Watch</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>60 Team</td>
+                <td>Induction Stove/ 3 Jar Mixer</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>250 Team</td>
+                <td>Freeze/Watching Machine</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>1250 Team</td>
+                <td>LED TV/1.5 Ton AC</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>5000 Team</td>
+                <td>Bike Hero Honda Splendor</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>15000 Team</td>
+                <td>Swift Car</td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>50000 Team</td>
+                <td>10 Lac Gold + 40 Lac House Fund</td>
+              </tr>
+            </table>
+
+
+
+          </div>
+
+          <div class="address popup">
+            <div class="conta">
+              <h3>Contact Us</h3>
+              <hr>
+      <p>        
+        For any Inquiries, Assistance, or collaboration Opportunities,
+        feel free to reach out to us. <br>
+        You can contact our team via
+email. <br>
+1. www.successfulmart.com <br>
+2. info@successfulmart.com
+3. Successfulmart32@gmail.com
+
+      </p>
+
+      <div class="location">
+        <h1 style="font-size: 1.2em; font-weight: 700; ">Company address</h1>
+        <hr>
+        <p>
+          <p>GOWRIWAKKAM</p>
+ <p>VELACHERY</p>
+ <p>TAMBARAM</p>
+ <p>CHENNAI CITY</p>
+ <p>TAMILNADU</p>
+ <p>Pin code - 600001</p>
+
+        </p>
+      </div>
+
+      <img width="400px" src="./img/WhatsApp Image 2024-11-05 at 10.39.21 AM.jpeg" alt="">
+            </div>
+          </div>
+
+
+          <!-- -------- -->
+
+          <div class="top-bar">
+            <img src="./img/updatedLogo.jpeg" alt="" />
+            <div class="top-bar-left">
+              <button class="btn login">
+                <img src="./img/SIGNUP.svg" alt="" />Sign up
+              </button>
+              <button class="btn signup">
+                <img src="./img/Login.svg" alt="" />Login
+              </button>
+            </div>
+          </div>
+          <div class="scroll">
+            <div class="position-marquee">
+              <div class="marquee-effect">
+                <div class="news">
+                  <img class="mic" src="./img/mic.svg" alt="" />
+                  <h3>News</h3>
+                  <img class="arrow-path" src="./img/path_arrow.svg" alt="" />
+                </div>
+                <marquee behavior="" scrollamount="2" direction="left"
+                  ><span>01 Nov 2024</span> Experience superfast withdrawals &
+                  the best support now !</marquee
+                >
+              </div>
+            </div>
+            <div class="swiper-container">
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="./img/crousel1.jpg" alt="" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./img/crousel2.jpg" alt="" />
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+
+            <!-- rectangle -->
+            <div class="rectangle_boxs">
+
+              <div class="rec_box">
+                <div class="rect">
+                  <div class="black_box">
+                    <h3>Rewads</h3>
+                    <div class="playnow">
+                      <!-- <img class="playnow_img" src="./img/playnow.svg" alt="">  -->
+                      <h4 class="playnow_text">Play Now</h4>
+                    </div>
+                  </div>
+
+                  <img src="./img/update_square1.jpg" alt="" />
+                </div>
+              </div>
+
+              <div class="rec_box">
+                <div class="rect">
+                  <div class="black_box">
+                    <h3>Rewads</h3>
+                    <div class="playnow">
+                      <!-- <img class="playnow_img" src="./img/playnow.svg" alt="">  -->
+                      <h4 class="playnow_text">Play Now</h4>
+                    </div>
+                  </div>
+
+                  <img src="./img/update_square2.jpg" alt="" />
+                </div>
+              </div>
+
+              <div class="rec_box">
+                <div class="rect">
+                  <div class="black_box">
+                    <h3>Rewads</h3>
+                    <div class="playnow">
+                      <!-- <img class="playnow_img" src="./img/playnow.svg" alt="">  -->
+                      <h4 class="playnow_text">Play Now</h4>
+                    </div>
+                  </div>
+
+                  <img src="./img/update_square3.jpg" alt="" />
+                </div>
+              </div>
+
+              <div class="rec_box">
+                <div class="rect">
+                  <div class="black_box">
+                    <h3>Rewads</h3>
+                    <div class="playnow">
+                      <!-- <img class="playnow_img" src="./img/playnow.svg" alt="">  -->
+                      <h4 class="playnow_text">Play Now</h4>
+                    </div>
+                  </div>
+
+                  <img src="./img/update_square4.jpg" alt="" />
+                </div>
+              </div>
+
+
+              <div class="rec_box">
+                <div class="rect">
+                  <div class="black_box">
+                    <h3>Rewads</h3>
+                    <div class="playnow">
+                      <!-- <img class="playnow_img" src="./img/playnow.svg" alt="">  -->
+                      <h4 class="playnow_text">Play Now</h4>
+                    </div>
+                  </div>
+
+                  <img src="./img/05.jpg" alt="" />
+                </div>
+              </div>
+
+              <div class="rec_box">
+                <div class="rect">
+                  <div class="black_box">
+                    <h3>Rewads</h3>
+                    <div class="playnow">
+                      <!-- <img class="playnow_img" src="./img/playnow.svg" alt="">  -->
+                      <h4 class="playnow_text">Play Now</h4>
+                    </div>
+                  </div>
+
+                  <img src="./img/02.jpg" alt="" />
+                </div>
+              </div>
+
+              <div class="rec_box">
+                <div class="rect">
+                  <div class="black_box">
+                    <h3>Rewads</h3>
+                    <div class="playnow">
+                      <!-- <img class="playnow_img" src="./img/playnow.svg" alt="">  -->
+                      <h4 class="playnow_text">Play Now</h4>
+                    </div>
+                  </div>
+
+                  <img src="./img/7thlevelRect.jpeg" alt="" />
+                </div>
+              </div>
+            </div>
+
+            <div class="empty_spaces"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+
+      let popup = document.querySelector(".popup");
+      let toggleicon = document.querySelectorAll(".toggleicon");
+      let icon = document.querySelectorAll(".icon");
+
+      function pop() {
+      
+        document.querySelectorAll('.icon').forEach(button => {
+    button.addEventListener('click', () => {
+        const className = button.classList[1]; // Get the specific class like 'about', 'vision', etc.
+        const popup = document.querySelector(`.popup.${className}`);
+
+        // Close any open popups before opening the new one
+        document.querySelectorAll('.popup').forEach(p => {
+            if (p !== popup) {
+                p.style.top = '180%';
+            }
+        });
+
+        // Toggle the popup position of the clicked button
+        popup.style.top = popup.style.top === '50%' ? '180%' : '50%';
+    });
+});
+
+      
+      }
+
+      pop();
+    </script>
+  </body>
+</html>
